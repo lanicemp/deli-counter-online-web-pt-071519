@@ -10,7 +10,6 @@ def line(deli)
     deli.each.with_index(1) do |name, index|
       line_array << "#{index}. #{name}"
     end 
-    binding.pry
     puts "The line is currently: #{line_array.join(" ")}"
   end 
 end 
