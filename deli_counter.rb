@@ -4,10 +4,13 @@ katz_deli = []
 def line(deli)
   line_array = []
   if deli.length == 0
+    #if deli.empty?(alternative code)
     puts  "The line is currently empty."
-    else deli.each.with_index(1) do |name, index|
-      line_array.push("#{index}. #{name}")
+  else 
+    deli.each.with_index(1) do |name, index|
+      line_array << "#{index}. #{name}"
     end 
+    binding.pry
     puts "The line is currently: #{line_array.join(" ")}"
   end 
 end 
